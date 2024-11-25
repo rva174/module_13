@@ -21,6 +21,7 @@ balance INTEGER NOT NULL
 )
 ''')
 
+
 cursor.execute("CREATE INDEX IF NOT EXISTS idx_email ON Users (email)")
 for i in range(10):
     age = 10 * (i + 1)
